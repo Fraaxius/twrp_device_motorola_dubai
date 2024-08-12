@@ -16,18 +16,18 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/rhodep
+DEVICE_PATH := device/motorola/dubai
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := holi
+TARGET_BOOTLOADER_BOARD_NAME := lahaina
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-QCOM_BOARD_PLATFORMS += holi
-TARGET_BOARD_PLATFORM := holi
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
+QCOM_BOARD_PLATFORMS += lahaina
+TARGET_BOARD_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno642L
 TARGET_USES_64_BIT_BINDER := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 BUILD_BROKEN_DUP_RULES := true
@@ -42,7 +42,7 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := kryo300
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
@@ -67,8 +67,8 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
 			service_locator.enable=1 \
 			loop.max_part=7 \
 			androidboot.hab.csv=2 \
-			androidboot.hab.product=rhodep \
-			androidboot.hab.cid=50
+			androidboot.hab.product=dubai \
+			androidboot.hab.cid=50 \
 			firmware_class.path=/vendor/firmware_mnt/image
 # For the love of all that is holy, please do not include this in your ROM unless you really want TWRP to not work correctly!
 BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
@@ -88,8 +88,8 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 #BOARD_KERNEL_SEPARATED_DTBO := true
 #BOARD_INCLUDE_RECOVERY_DTBO := true
-#TARGET_KERNEL_SOURCE := kernel/motorola/rhodep
-#TARGET_KERNEL_CONFIG := vendor/rhodep_defconfig
+#TARGET_KERNEL_SOURCE := kernel/motorola/dubai
+#TARGET_KERNEL_CONFIG := vendor/dubai_defconfig
 
 BOARD_KERNEL_IMAGE_NAME := kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
@@ -116,11 +116,11 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 116681322496
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := rhodep
+TARGET_OTA_ASSERT_DEVICE := dubai
 
 # Dynamic Partition && Super
-BOARD_SUPER_PARTITION_SIZE := 8613003264
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8612999168 # BOARD_SUPER_PARTITION_SIZE - 4MB
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # BOARD_SUPER_PARTITION_SIZE - 4MB
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_PARTITION_LIST := product system system_ext vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor

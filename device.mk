@@ -103,22 +103,22 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
 
 # Copy modules for depmod
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/adapter_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/adapter_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/cw2217b_fg_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/cw2217b_fg_mmi.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/adsp_loader_dlkm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/adsp_loader_dlkm.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/apr_dlkm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/apr_dlkm.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/exfat.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/exfat.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/goodix_brl_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/goodix_brl_mmi.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_annotate.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_annotate.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_charger.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_discrete_charger_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_discrete_charger_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_discrete_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_discrete_charger.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_info.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_info.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/mmi_sys_temp.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/mmi_sys_temp.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/moto_f_usbnet.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/moto_f_usbnet.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/msm_drm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/msm_drm.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/q6_notifier_dlkm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/q6_notifier_dlkm.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/q6_pdr_dlkm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/q6_pdr_dlkm.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/qpnp_adaptive_charge.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/qpnp_adaptive_charge.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/rt_pd_manager.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/rt_pd_manager.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/qti_glink_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/qti_glink_charger.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sensors_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sensors_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sgm4154x_charger.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sgm4154x_charger.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sm5602_fg_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sm5602_fg_mmi.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/tcpc_class.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_class.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/tcpc_sgm7220.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/tcpc_sgm7220.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/ldo_vibrator_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/ldo_vibrator_mmi.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/snd_event_dlkm.ko.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/snd_event_dlkm.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sx937x_sar.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sx937x_sar.ko \
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/touchscreen_mmi.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/touchscreen_mmi.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/utags.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/utags.ko

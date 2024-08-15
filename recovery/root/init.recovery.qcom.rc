@@ -41,6 +41,15 @@ on fs
 on post-fs
     start boot-hal-1-1
 
+on property:modem.partition.mounted=1
+    insmod /vendor/lib/modules/q6_pdr_dlkm.ko
+    insmod /vendor/lib/modules/q6_notifier_dlkm.ko
+    insmod /vendor/lib/modules/snd_event_dlkm.ko
+    insmod /vendor/lib/modules/apr_dlkm.ko
+    insmod /vendor/lib/modules/adsp_loader_dlkm.ko
+    write /sys/kernel/boot_adsp/boot 1
+    wait /sys/class/power_supply/battery
+
 on post-fs-data
 # +++ ASUS_BSP : add for asus battery safety upgrade and health partition
 #mount batinfo

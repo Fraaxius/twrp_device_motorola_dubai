@@ -237,28 +237,7 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_SYSTEM := system
 
 # Kernel module loading
-TW_LOAD_VENDOR_MODULES := "adapter_class.ko \
-            bq2589x_charger.ko \
-            bq2597x_mmi_iio.ko \
-            cw2217b_fg_mmi.ko \
-            exfat.ko \
-            goodix_brl_mmi.ko \
-            ldo_vibrator_mmi.ko \
-            mmi_annotate.ko \
-            mmi_charger.ko \
-            mmi_discrete_charger_class.ko \
-            mmi_discrete_charger.ko \
-            mmi_info.ko \
-            mmi_sys_temp.ko \
-            moto_f_usbnet.ko \
-            qpnp_adaptive_charge.ko \
-            rt_pd_manager.ko \
-            sensors_class.ko \
-            sgm4154x_charger.ko \
-            sm5602_fg_mmi.ko \
-            tcpc_class.ko \
-            tcpc_sgm7220.ko \
-            utags.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko qpnp_adaptive_charge.ko sensors_class.ko moto_f_usbnet.ko mmi_sys_temp.ko mmi_info.ko mmi_annotate.ko goodix_brl_mmi.ko mmi_charger.ko mpq-adapter.ko touchscreen_mmi.ko utags.ko"
 
 # Include decryption support
 TW_INCLUDE_CRYPTO := true
